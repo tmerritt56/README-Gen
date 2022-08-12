@@ -1,7 +1,6 @@
 // TODO: Include packages needed for this application.
 const fs = require('fs');
 const inquirer = require('inquirer');
-const { title } = require('process');
 const generateMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
@@ -29,6 +28,11 @@ const questions = [{
     type: "input",
     name: "test",
     message: "How will this be tested?",
+}, {
+    type: "list",
+    name: "license",
+    message: "Which license are you picking?",
+    choices: ["Apache","MIT","BSD 3", "no license"]
 }, {
     type: "input",
     name: "user",
