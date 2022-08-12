@@ -24,9 +24,12 @@
   You can contribute by either forking my work, or requesting to contribute. :) 
   
   ## Tests:
-  undefined
+  npm test
   
-## License 
+  ## Link to recording
+  Link to screen recording: [https://watch.screencastify.com/v/Akirgg6HzI1kMCc6RPcl]
+  
+  ## License 
     Project licensed by MITlicense.
   
   ### Questions:
