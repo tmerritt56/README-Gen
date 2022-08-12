@@ -1,5 +1,4 @@
-// TODO: Include packages needed for this application
-const { table } = require('console');
+// TODO: Include packages needed for this application.
 const fs = require('fs');
 const inquirer = require('inquirer');
 const { title } = require('process');
@@ -42,7 +41,11 @@ const questions = [{
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) =>
+    err ? console.log(err) : console.log("README.md created successfully!") 
+    );
+}
 
 // TODO: Create a function to initialize app
 function init() {
